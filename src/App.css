@@ -1,38 +1,185 @@
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    height: 15rem;
+    /* position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #efeeec; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.newsletter {
+    text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header-top-bar {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.header-content {
+    display: flex;
+    justify-content: space-around;
+    top: 10rem;
+    /* align-items: center;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 50px 75px;
+    z-index: 1;
+    position: relative;
+    background: white;
+    transition: background 0.2s ease-in-out; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.promo {
+    background-color: #efeeec;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.665em;
+    text-align: center;
+    padding: 0.5em 1em;
+}
+
+@media only screen and (min-width: 750px) and (max-width: 989px) {
+    .header-top-bar {
+        /* padding: 50px 25px; */
+        padding-top: 3rem;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .header-middle-section.logo-container {
+        width: auto;
+    }
+}
+
+.header-left-section {
+    width: 30%;
+}
+
+.header-left-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content a {
+    text-decoration: none;
+}
+
+.header-middle-section.logo-container {
+    width: 50%;
+    justify-content: center;
+    display: flex;
+}
+
+.header-right-section {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+
+@media only screen and (min-width: 750px) {
+    .header-middle-section {
+        display: flex;
+        flex: 0 1 60%;
+        justify-content: center;
+    }
+}
+
+.wrap {
+    position: relative;
+    line-height: 1;
+    z-index: 99;
+}
+
+.header-top-bar {
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+@media only screen and (min-width: 750px) and (max-width: 989px) {
+    .header-top-bar {
+        padding: 50px 25px;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .header-left-section,
+    .placeholder {
+        flex: 0 0 15%;
+    }
+}
+
+.aos-initialized [data-aos][data-aos][data-aos-delay='300'].aos-animate,
+.aos-initialized body[data-aos-delay='300'] [data-aos].aos-animate {
+    transition-delay: 0.3s;
+}
+
+.aos-initialized [data-aos^='fade'][data-aos^='fade'].aos-animate {
+    opacity: 1;
+    transform: translate(0);
+}
+
+@media only screen and (max-width: 989px) {
+    .logo__wrapper {
+        font-size: 24px;
+        padding: 0;
+        margin: 0 auto;
+        max-width: calc(100% - 92px);
+    }
+}
+
+.logo__wrapper {
+    font-size: 28px;
+    font-family: Neutra Text Alt, sans-serif;
+    font-style: normal;
+    line-height: 1;
+    margin: 0;
+    display: block;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+}
+
+.navigation__wrapper {
+    position: relative;
+}
+
+@media only screen and (min-width: 750px) {
+    .site-nav.nav__links {
+        border: none;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 989px) {
+    .header-bottom-bar {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .header-bottom-bar {
+        justify-content: space-between;
+    }
+}
+
+.content {
+    min-height: 100vh;
+    /* padding-top: 15.5rem; */
+    /* padding-top: 5rem; */
+    padding-left: 10px;
 }

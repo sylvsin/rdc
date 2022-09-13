@@ -1,0 +1,57 @@
+.africa-image {
+    min-height: 188px;
+}
+
+.bijoux_8 {
+    width: 500px;
+    height: 500px;
+    padding-left: 5px;
+}
+
+.bijoux_5 {
+    padding-left: 5px;
+    width: 500px;
+    height: 500px;
+}
+
+.new-in {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 4rem;
+}
+
+.new-products {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.bijoux {
+    width: 200px;
+    height: 200px;
+    padding-top: 1rem;
+}
+
+.hand-made-by {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4rem;
+}
+
+.bijoux-1 {
+    width: 500px;
+    height: 500px;
+}
+
+.hand-made-text {
+    padding-top: 13rem;
+}
+
+.find-more {
+    text-decoration: none;
+    color: gold;
+}
+
+.welcome {
+    font-size: 3rem;
+}
